@@ -24,27 +24,52 @@ canvas {
   z-index:0; pointer-events:none;
 }
 .card {
-  position:relative; z-index:1;
-  background:#fff; border-radius:20px;
+  position:relative;
+  z-index:1;
+  background:#fff;
+  border-radius:20px;
   box-shadow:0 8px 30px rgba(0,0,0,0.2);
-  max-width:420px; width:90%; min-height:520px;
-  display:flex; flex-direction:column; overflow:hidden;
-  padding-bottom:60px; /* untuk ruang tombol musik */
+  max-width:420px;
+  width:90%;
+  height:680px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  padding-bottom:60px;
 }
-.slide {
-  position:absolute; top:0; left:0; right:0; bottom:0;
-  display:flex; flex-direction:column;
-  opacity:0; pointer-events:none;
-}
-.slide.active {opacity:1; pointer-events:auto;}
+
 .content {
-  flex:1; padding:20px;
-  display:flex; flex-direction:column;
-  justify-content:center; align-items:center;
-  text-align:center; overflow-y:auto;
+  flex:1;
+  padding:25px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  overflow:hidden;
 }
-h1 {font-size:28px; margin:10px 0; color:#ff4d88;}
-p {font-size:20px; color:#333;}
+
+h1 {
+  font-size:28px;
+  margin:10px 0;
+  color:#ff4d88;
+}
+
+p {
+  font-size:17px;
+  line-height:1.6;
+  color:#333;
+  margin:10px 0;
+}
+
+img {
+  max-width:75%;
+  max-height:260px;
+  object-fit:contain;
+  border-radius:16px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
+  margin:15px 0;
+}
 .pin-box {
   display:flex; gap:10px; justify-content:center; margin:15px 0;
 }
@@ -163,7 +188,7 @@ img {max-width:80%; border-radius:16px; box-shadow:0 4px 16px rgba(0,0,0,0.3); m
   <div class="slide" id="slide4">
     <div class="content">
       -- <h1>one thing i want you to remember</h1>
-      <img src="foto.jpg" alt="Foto Romantis">
+      <img src="foto.png" alt="fto call imup">
       <p>aku tau km udah ngelewatin banyak hal, dan aku tau kadang km terlalu keras sama diri km sendiri. tapi aku harap km bisa mulai ngeliat diri km dari sisi yang aku liat juga. aku liat usaha km, aku liat gimana km terus berusaha buat jadi lebih baik, dan honestly i'm so proud of you. km ga harus sempurna buat jadi seseorang yang pantas disayang, because you already are, sayang 🤍</p>
     </div>
     <div class="nav-btns">
