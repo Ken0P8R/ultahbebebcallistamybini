@@ -59,20 +59,33 @@ canvas {
 }
 }
 .content {
+  width:100%;
+  box-sizing:border-box;
   flex:1;
-  padding:25px;
+  padding:25px 30px;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   text-align:center;
-  overflow:hidden;
+}
+
+.content img {
+  display:block;
+  margin:15px auto;
+  max-width:80%;
 }
 
 h1 {
   font-size:28px;
   margin:10px 0;
   color:#ff4d88;
+}
+
+.content p {
+  width:100%;
+  text-align:center;
+  margin:10px auto;
 }
 
 p {
